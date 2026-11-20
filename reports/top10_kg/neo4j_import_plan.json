@@ -9,7 +9,7 @@
     "human_review"
   ],
   "drug_nodes": 10,
-  "evidence_nodes": 35,
+  "evidence_nodes": 40,
   "claim_nodes": 61,
   "path_nodes": 395,
   "failed_or_skipped_sources_imported": 0,

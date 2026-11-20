@@ -116,7 +116,7 @@ class OpenTargetsAdapter(SourceAdapter):
     name = "opentargets"
 
     def target_disease(self, target_id: str, disease_id: str):
-        query = "query($target:String!,$disease:String!){disease(efoId:$disease){id name associatedTargets(page:{index:0,size:25},cursor:null){rows{target{id} score{overall}}}} target(ensemblId:$target){id approvedSymbol}}"
+        query = "query($target:String!,$disease:String!){disease(efoId:$disease){id name associatedTargets(page:{index:0,size:25}){rows{target{id} score}}} target(ensemblId:$target){id approvedSymbol}}"
         body = json.dumps({"query": query, "variables": {"target": target_id, "disease": disease_id}}).encode()
         return self.fetch_json("https://api.platform.opentargets.org/api/v4/graphql", method="POST", body=body, headers={"Content-Type": "application/json"})
 
