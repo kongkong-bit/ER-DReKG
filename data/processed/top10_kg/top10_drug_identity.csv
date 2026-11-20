@@ -1,0 +1,11 @@
+pert_id,pert_iname,canonical_name,aliases,chembl_id,pubchem_cid,inchikey,drugbank_id,mapping_status,mapping_evidence,review_status
+BRD-K44227013,ponatinib,ponatinib,,CHEMBL1171837,,PHXJVRSECIGDHY-UHFFFAOYSA-N,,exact,OptimusKG 3.2 exact InChIKey audit,automatically_verified_against_existing_graph
+BRD-K16485616,mocetinostat,mocetinostat,,CHEMBL272980,,HRNLUBSXIHFDHP-UHFFFAOYSA-N,,exact,OptimusKG 3.2 exact InChIKey audit,automatically_verified_against_existing_graph
+BRD-K56405753,MK-2461,MK-2461,,,,JGEBLDKNWBUGRZ-HXUWFJFHSA-N,,unmatched,当前图谱无 exact InChIKey 记录；需外部解析或人工复核,manual_review_required
+BRD-K92093830,doxorubicin,doxorubicin,,CHEMBL53463,,AOJJSUZBOXZQNB-TZSSRYMLSA-N,,exact,OptimusKG 3.2 exact InChIKey audit,automatically_verified_against_existing_graph
+BRD-K76694128,rebastinib,rebastinib,,,,WVXNSAVVKYZVOE-UHFFFAOYSA-N,,unmatched,当前图谱无 exact InChIKey 记录；需外部解析或人工复核,manual_review_required
+BRD-K50000283,PHA-767491,PHA-767491,,,,DKXHSOUZPMHNIZ-UHFFFAOYSA-N,,unmatched,当前图谱无 exact InChIKey 记录；需外部解析或人工复核,manual_review_required
+BRD-K11153516,iniparib,iniparib,,CHEMBL1170047,,MDOJTZQKHMAPBK-UHFFFAOYSA-N,,exact,OptimusKG 3.2 exact InChIKey audit,automatically_verified_against_existing_graph
+BRD-A00147595,balaglitazone,balaglitazone,,CHEMBL2103991,,IETKPTYAGKZLKY-UHFFFAOYSA-N,,exact,OptimusKG 3.2 exact InChIKey audit,automatically_verified_against_existing_graph
+BRD-K13094524,PFI-1,PFI-1,,,,TXZPMHLMPKIUGK-UHFFFAOYSA-N,,unmatched,当前图谱无 exact InChIKey 记录；需外部解析或人工复核,manual_review_required
+BRD-K83837640,JNJ-26481585,JNJ-26481585,,,,PAWIYAYFNXQGAP-UHFFFAOYSA-N,,unmatched,当前图谱无 exact InChIKey 记录；需外部解析或人工复核,manual_review_required

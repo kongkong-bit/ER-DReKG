@@ -31,6 +31,7 @@ from app.s1_expression import run_limma_microarray, run_rnaseq_edger_voom, run_p
 from app.s1_pathways import COLLECTIONS, pathway_items, pathway_summary
 from app.s1_precomputed import standardize_precomputed_deg
 from app.s2_stability import summarize_condition_stability
+from app.top10_kg import load_top10_audit
 
 
 @asynccontextmanager
@@ -946,6 +947,16 @@ def graph_summary(project_id: str, db: Session = Depends(get_db), graph_build_id
     build = _resolve_graph_build(db, project_id, graph_build_id)
     graph_dir = _graph_bundle_dir_for_build(db, build)
     return {"project_id": project_id, "graph_build_id": build.graph_build_id if build else None, **graph_counts(project.slug, build.graph_build_id if build else None, graph_dir)}
+
+
+@app.get(f"{API}/projects/{{project_id}}/top10-kg/audit")
+def top10_kg_audit(project_id: str, db: Session = Depends(get_db)):
+    project = db.get(Project, project_id)
+    if not project:
+        raise HTTPException(404, "project not found")
+    if project.slug != "erpos-gse42568":
+        raise HTTPException(409, "Top 10 专项审计仅属于 erpos-gse42568 项目")
+    return {"project_id": project_id, **load_top10_audit()}
 
 
 @app.get(f"{API}/projects/{{project_id}}/graph/search")

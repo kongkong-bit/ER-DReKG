@@ -1,0 +1,11 @@
+rank,pert_id,drug_name,mapping_status,graph_drug_id,inchikey,direct_target_count,pathway_count,evidence_count,complete_path,evidence_complete,gaps
+1,BRD-K44227013,ponatinib,exact,CHEMBL1171837,PHXJVRSECIGDHY-UHFFFAOYSA-N,21,99,251,True,True,
+2,BRD-K16485616,mocetinostat,exact,CHEMBL272980,HRNLUBSXIHFDHP-UHFFFAOYSA-N,5,37,79,True,True,
+3,BRD-K56405753,MK-2461,unmatched,,JGEBLDKNWBUGRZ-HXUWFJFHSA-N,0,0,0,False,False,identity_not_exactly_mapped;no_direct_target_evidence_in_current_graph;no_target_pathway_connection_in_current_graph;no_disease_context_evidence_on_path;no_traceable_evidence_id
+4,BRD-K92093830,doxorubicin,exact,CHEMBL53463,AOJJSUZBOXZQNB-TZSSRYMLSA-N,31,88,224,True,True,
+5,BRD-K76694128,rebastinib,unmatched,,WVXNSAVVKYZVOE-UHFFFAOYSA-N,0,0,0,False,False,identity_not_exactly_mapped;no_direct_target_evidence_in_current_graph;no_target_pathway_connection_in_current_graph;no_disease_context_evidence_on_path;no_traceable_evidence_id
+6,BRD-K50000283,PHA-767491,unmatched,,DKXHSOUZPMHNIZ-UHFFFAOYSA-N,0,0,0,False,False,identity_not_exactly_mapped;no_direct_target_evidence_in_current_graph;no_target_pathway_connection_in_current_graph;no_disease_context_evidence_on_path;no_traceable_evidence_id
+7,BRD-K11153516,iniparib,exact,CHEMBL1170047,MDOJTZQKHMAPBK-UHFFFAOYSA-N,1,40,81,True,True,
+8,BRD-A00147595,balaglitazone,exact,CHEMBL2103991,IETKPTYAGKZLKY-UHFFFAOYSA-N,3,82,167,True,True,
+9,BRD-K13094524,PFI-1,unmatched,,TXZPMHLMPKIUGK-UHFFFAOYSA-N,0,0,0,False,False,identity_not_exactly_mapped;no_direct_target_evidence_in_current_graph;no_target_pathway_connection_in_current_graph;no_disease_context_evidence_on_path;no_traceable_evidence_id
+10,BRD-K83837640,JNJ-26481585,unmatched,,PAWIYAYFNXQGAP-UHFFFAOYSA-N,0,0,0,False,False,identity_not_exactly_mapped;no_direct_target_evidence_in_current_graph;no_target_pathway_connection_in_current_graph;no_disease_context_evidence_on_path;no_traceable_evidence_id
