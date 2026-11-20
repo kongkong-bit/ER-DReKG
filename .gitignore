@@ -38,6 +38,7 @@ frontend/.vite/
 .env
 backend/.env
 .uv-cache/
+reports/top10_kg/neo4j_backup_*/
 **/.cache/
 **/logs/
 *.log

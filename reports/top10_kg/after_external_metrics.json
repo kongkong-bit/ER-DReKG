@@ -4,6 +4,8 @@
   "exact_or_external_confirmed_identity_rate": 0.7,
   "external_records": 35,
   "source_status_rows": 60,
-  "formal_graph_imported": false,
-  "interpretation": "外部快照已规范化，但在 Neo4j 导入前仍需人工/规则复核；这些记录不自动改变正式图谱。"
+  "formal_graph_imported": true,
+  "neo4j_import_run": "top10_kg_v1",
+  "neo4j_import_counts": {"drug_nodes": 10, "evidence_nodes": 35, "claim_nodes": 61, "path_nodes": 395},
+  "interpretation": "外部快照已规范化并完成 Neo4j 事务导入；3 个身份仍需人工复核，失败或跳过来源未进入图谱事实。"
 }
