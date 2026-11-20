@@ -127,6 +127,7 @@ const loadEvidenceRecord = async (evidenceId: string, graphBuildId?: string): Pr
 export default function FinalResultsPage() {
   const { project, isLoading, error } = useProject()
   const query = useQuery({ queryKey: ['final-results'], queryFn: loadFinalData, staleTime: 60_000 })
+  const top10Audit = useQuery({ queryKey: ['top10-kg-audit', project?.project_id], queryFn: () => api.top10KgAudit(project!.project_id), enabled: !!project && project.slug === 'erpos-gse42568', staleTime: 60_000 })
   const [selectedId, setSelectedId] = useState<string>()
   const [selectedEvidenceId, setSelectedEvidenceId] = useState<string>()
   const evidenceQuery = useQuery({
@@ -209,6 +210,20 @@ export default function FinalResultsPage() {
       <Paragraph><Text strong>建议后续验证：</Text>{data.final05.validation_priorities.map(x => `${x.drug_name}：${x.role}`).join(' · ')}</Paragraph>
       {data.final05.special_cautions.map(caution => <Alert key={caution} type="warning" showIcon message={caution} style={{ marginTop: 8 }} />)}
     </Card>
+
+    {top10Audit.data?.available && <Card className="section-card" title="Top 10 专项知识图谱审计">
+      <Alert type="info" showIcon message="这是证据覆盖审计，不是新的药物排名" description="身份、直接靶点、通路和完整路径分别统计；没有可追溯证据的候选保留为缺口。" style={{ marginBottom: 12 }} />
+      <Row gutter={[14, 14]}>
+        <Col xs={12} md={6}><Card><Statistic title="精确身份映射" value={Number(top10Audit.data.metrics?.identity_exact_count ?? 0)} suffix="/10" /></Card></Col>
+          <Col xs={12} md={6}><Card><Statistic title="外部结构确认" value={Number(top10Audit.data.external_metrics?.exact_or_external_confirmed_identity_count ?? 0)} suffix="/10" /></Card></Col>
+        <Col xs={12} md={6}><Card><Statistic title="有直接靶点证据" value={Number(top10Audit.data.metrics?.direct_target_count ?? 0)} suffix="/10" /></Card></Col>
+        <Col xs={12} md={6}><Card><Statistic title="有靶点-通路连接" value={Number(top10Audit.data.metrics?.pathway_count ?? 0)} suffix="/10" /></Card></Col>
+        <Col xs={12} md={6}><Card><Statistic title="完整机制路径" value={Number(top10Audit.data.metrics?.complete_mechanism_path_count ?? 0)} suffix="/10" /></Card></Col>
+      </Row>
+      <Table size="small" rowKey="pert_id" pagination={false} dataSource={(top10Audit.data.candidates ?? []).filter(row => row.gaps)} columns={[
+        { title: '候选药物', dataIndex: 'drug_name' }, { title: '身份', dataIndex: 'mapping_status' }, { title: '直接靶点', dataIndex: 'direct_target_count' }, { title: '通路', dataIndex: 'pathway_count' }, { title: '未解决缺口', dataIndex: 'gaps', render: (value: string) => value.split(';').join('；') },
+      ]} />
+    </Card>}
 
     <Row gutter={[14, 14]} className="section-card">
       <Col xs={12} md={6}><Card><Statistic title="修正后 S2 签名" value={5861} /></Card></Col>

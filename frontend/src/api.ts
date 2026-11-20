@@ -103,6 +103,7 @@ export const api = {
     return response.json() as Promise<{analysis_run_id:string;status:string;test_only:boolean;condition_count:number;log_path:string;log_sha256:string;qc_summary:Record<string,unknown>}>
   },
   graphSummary: (id: string, buildId?: string) => request<{ graph_build_id?: string; node_count: number; edge_count: number; nodes_by_type: Record<string, number>; source: string }>(`/projects/${id}/graph/summary${buildId ? `?graph_build_id=${encodeURIComponent(buildId)}` : ''}`),
+  top10KgAudit: (id: string) => request<{project_id:string;available:boolean;reason?:string;metrics?:Record<string,unknown>;external_metrics?:Record<string,unknown>;candidates?:Array<Record<string,string>>}>(`/projects/${id}/top10-kg/audit`),
   graphBuilds: (id: string) => request<{items: GraphBuild[]}>(`/projects/${id}/graph-builds`),
   createProjectGraphBundle: async (id:string,payload:{s1_analysis_run_id:string;s2_analysis_run_id:string;enrichment_analysis_run_id:string}) => {
     const response = await fetch(`/api/v1/projects/${id}/graph-bundles`, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})

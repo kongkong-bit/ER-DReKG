@@ -1,0 +1,30 @@
+version: 1
+project: erpos-gse42568
+top10_only: true
+cache_dir: data/raw/top10_kg/source_cache
+sources:
+  pubchem:
+    base_url: https://pubchem.ncbi.nlm.nih.gov/rest/pug
+    purpose: identity_and_structure
+  chembl:
+    base_url: https://www.ebi.ac.uk/chembl/api/data
+    purpose: curated_mechanism_and_bioactivity
+  dgidb:
+    base_url: https://dgidb.org/api/v2
+    purpose: interaction_leads
+  reactome:
+    base_url: https://reactome.org/ContentService/data
+    purpose: human_pathway_membership
+  opentargets:
+    base_url: https://api.platform.opentargets.org/api/v4/graphql
+    purpose: target_disease_association
+  pubmed:
+    base_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils
+    purpose: literature_search
+policies:
+  preserve_raw_snapshots: true
+  retry_count: 2
+  request_timeout_seconds: 30
+  min_request_interval_seconds: 0.25
+  never_upgrade_association_to_direct_target: true
+  never_upgrade_breast_cancer_to_er_positive_specific: true

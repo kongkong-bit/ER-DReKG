@@ -1,0 +1,29 @@
+{
+  "status": "audited",
+  "generated_at": "2026-11-20T10:42:45.616536+00:00",
+  "top10_count": 10,
+  "identity_exact_count": 5,
+  "identity_exact_rate": 0.5,
+  "direct_target_count": 5,
+  "direct_target_rate": 0.5,
+  "pathway_count": 5,
+  "pathway_rate": 0.5,
+  "complete_mechanism_path_count": 5,
+  "complete_mechanism_path_rate": 0.5,
+  "evidence_complete_archive_count": 5,
+  "source_row_counts": {
+    "top10": 10,
+    "mapping": 10,
+    "targets": 61,
+    "paths": 395,
+    "evidence": 885
+  },
+  "source_sha256": {
+    "experiments\\final_results\\results\\final_top10.csv": "44c2c2ed369e6557fb7b901d98c545556b63c7c2de299d36921b9f8d9adf4682",
+    "experiments\\final_results\\mechanism\\final_neo4j_drug_mapping.csv": "56e441b7f602a79990afb8cafc43e4b70f806f7b997f5ca70b8e8923ea2225a3",
+    "experiments\\final_results\\mechanism\\final_neo4j_direct_targets.csv": "6837ce237a307abce97d088a51fff95483a11a0763192974abc05c5526c0e141",
+    "experiments\\final_results\\mechanism\\top10_mechanism_paths.csv": "43c5d7813c09c35ab031a3d0c6269f1cee6cc17a137dd79f9934b45f622be94a",
+    "experiments\\final_results\\mechanism\\top10_evidence_citations.csv": "96d66b4f44062882fd0911df4b7b1ef04c215d43ce062b0c773b7b2767ea4cf4"
+  },
+  "interpretation": "这些是当前版本的证据覆盖指标，不是药物疗效概率。"
+}

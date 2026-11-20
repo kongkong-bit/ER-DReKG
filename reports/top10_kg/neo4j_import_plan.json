@@ -1,0 +1,17 @@
+{
+  "run_id": "top10_kg_v1",
+  "write_performed": false,
+  "requires": [
+    "backup_path",
+    "NEO4J_URI",
+    "NEO4J_USER",
+    "NEO4J_PASSWORD",
+    "human_review"
+  ],
+  "drug_nodes": 10,
+  "evidence_nodes": 40,
+  "claim_nodes": 61,
+  "path_nodes": 395,
+  "failed_or_skipped_sources_imported": 0,
+  "cypher_path": "D:\\CLASS\\test\\ER-DReKG-main\\reports\\top10_kg\\neo4j_import_plan.cypher"
+}
