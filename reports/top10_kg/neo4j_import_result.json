@@ -1,9 +1,9 @@
 {
   "status": "PASS",
   "write_performed": true,
-  "backup_path": "reports\\top10_kg\\neo4j_backup_20261120\\neo4j.dump",
+  "backup_path": "reports\\top10_kg\\neo4j_backup_20261120_post_ot\\neo4j.dump",
   "drug_nodes": 10,
-  "evidence_nodes": 35,
+  "evidence_nodes": 40,
   "claim_nodes": 61,
   "path_nodes": 395
 }
