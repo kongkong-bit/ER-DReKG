@@ -1,0 +1,61 @@
+run_id,pert_id,drug_name,source,status,record_count,snapshot_path,error
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K44227013,ponatinib,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\f347dd17c05fd491bcc96aa0d24e3e6740e2fda80c232e5f5fd6df6e416709e5.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K44227013,ponatinib,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\0ac69fec082af44d1844a8d282c1bac298c9f69993674da0eac89b396fc718f6.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K44227013,ponatinib,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K44227013,ponatinib,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\8b4faef4bbb41f2588ff428b3b55b7aa39ca8b3296bf9ccb8eb1255314210d6a.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K44227013,ponatinib,reactome,ok,4,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\reactome\294a049435b7d22c8fdbf6357d2aa8f18acb9ec470c6942023e09d1130684697.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K44227013,ponatinib,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K16485616,mocetinostat,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\41ac0dfdbe970855bb330fb9b564ea60c6f99f4c0bda356b779ec616dad42d0b.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K16485616,mocetinostat,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\c9e402b4d1dd0cfc7ebb56cd82187b2c2b45a420b5f507c7746f20f749e919e3.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K16485616,mocetinostat,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K16485616,mocetinostat,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\955feeecf0e228658b51992a66c630d678396f1118a645014d3be8ad576c5836.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K16485616,mocetinostat,reactome,ok,43,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\reactome\f4340f40c6bc07f6270fe025bd587999bb71077488b7d72ffaa538f47af7da90.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K16485616,mocetinostat,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K56405753,MK-2461,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\599a19012c0180d84c11cbeb960255c71fd37cb16ba2a83c1d62885173a2f983.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K56405753,MK-2461,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\21a5cbe41ec6df7d2872d64df53d4ab2641140a8597f21b06064e80b5d78fc4d.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K56405753,MK-2461,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K56405753,MK-2461,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\9d7eba01af0ee0a44a86a5b5fc6db8bbbf532368c0d595351e661dc5ab94def6.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K56405753,MK-2461,reactome,skipped,0,,当前图谱没有可核实的 target_symbol
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K56405753,MK-2461,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K92093830,doxorubicin,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\e9af4760c46096d8c7627c677b13c80d6937d23d7dddc1255aacac782d9fa3aa.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K92093830,doxorubicin,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\146b27649e9e6de17c266589446905dbb36fa934a4747aeb7470aaadac155513.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K92093830,doxorubicin,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K92093830,doxorubicin,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\cd1fbdee546ba09edd8cf93a23bb0bf9ca0480a49a80a74e54a7783228d1cb56.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K92093830,doxorubicin,reactome,cached,4,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\reactome\294a049435b7d22c8fdbf6357d2aa8f18acb9ec470c6942023e09d1130684697.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K92093830,doxorubicin,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K76694128,rebastinib,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\f1eb94a7af8dbfbde63f67a245f0b5178341ceb796a3f3d25cb806d85527d3e5.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K76694128,rebastinib,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\a88211a6d4778fda8c64bcd7ddab5056668ca10fb9275b714660888bcc2e9af2.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K76694128,rebastinib,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K76694128,rebastinib,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\88dc0df1a9cb2e2bb4a13e2b489d69986dce06cd94410b889b6fb1005312124a.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K76694128,rebastinib,reactome,skipped,0,,当前图谱没有可核实的 target_symbol
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K76694128,rebastinib,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K50000283,PHA-767491,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\9546a6ddf3be197a3391aeb1be59645d649d58498c1baf7552b589121fa17f53.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K50000283,PHA-767491,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\3e787deccc1bb856c9592567a394adc5f1c1a166c1dfb3c55cef0adb7508d696.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K50000283,PHA-767491,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K50000283,PHA-767491,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\b4c26e35ea11ee491f4bb5c2f566187886d53bcb6ea687a481e3f796f82f83f3.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K50000283,PHA-767491,reactome,skipped,0,,当前图谱没有可核实的 target_symbol
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K50000283,PHA-767491,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K11153516,iniparib,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\315cb177f57af9f9d82d548b8cacc6a4299c672f7aa88b3e8331eebbcccc6ec5.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K11153516,iniparib,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\a00be41079de1f69f85852c0a8eb7e354314d54177353bf9ad658ce106b638f2.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K11153516,iniparib,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K11153516,iniparib,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\46c9b904415d2c678fa252ffa825a32d6ae45ba7674fbd8f3c572d655b153839.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K11153516,iniparib,reactome,ok,6,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\reactome\f9a0ee0ca03f707975d1384e2e1d3289982f46131028b6a3b2274e8fd109a973.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K11153516,iniparib,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-A00147595,balaglitazone,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\d3bfb1127ef866ec6ceb784592317764f93b40dd5bfd46117a205f5f1a83b8bd.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-A00147595,balaglitazone,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\ab9b5fb448091751711cbab7a0ad209501729b969ab596f74313f63f5452fd67.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-A00147595,balaglitazone,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-A00147595,balaglitazone,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\c8dbd1bdbe72c408e842f2b18c03205f4e70b976b400ecb5080636d663041dfc.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-A00147595,balaglitazone,reactome,ok,6,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\reactome\9f8d81e3953a14aaa297cbf960c388dcd0c1342923e0dd03bdd0356ccdb42fbe.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-A00147595,balaglitazone,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K13094524,PFI-1,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\9bf633d5d53528d2abe66dc1d57dfd513b90da2106eb139230f14155671bb703.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K13094524,PFI-1,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\34dbcf93df7461e2c2a9acc90bb9d7e20daa0c99e34f0695bf11abdfd6f095a9.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K13094524,PFI-1,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K13094524,PFI-1,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\9cdc3361788e5c18041fd2b7beec04a239ee94a5eae6b7054d6249032c4078cc.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K13094524,PFI-1,reactome,skipped,0,,当前图谱没有可核实的 target_symbol
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K13094524,PFI-1,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K83837640,JNJ-26481585,pubchem,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubchem\70978e7aa1dcfd74677b7306e18eddb2d70222c9a6051ca23b0aab6ad00c5cf2.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K83837640,JNJ-26481585,chembl,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\chembl\58d9a03c68e93b5b06847542aabef11f16fa3c1cdae488d6c3f1615babf7a285.json,
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K83837640,JNJ-26481585,dgidb,failed,0,,Expecting value: line 1 column 1 (char 0)
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K83837640,JNJ-26481585,pubmed,ok,1,D:\CLASS\test\ER-DReKG-main\data\raw\top10_kg\source_cache\pubmed\2af59cfb4dd9d59d1000e74d44fa2b6e9dd41ea75eb830f9fa22c88f787a5b99.json,
+TOP10_REACTOME_REFRESH:20261120T100226Z:4831a71d,BRD-K83837640,JNJ-26481585,reactome,skipped,0,,当前图谱没有可核实的 target_symbol
+TOP10_SOURCE_RUN:20261120T095226Z:1ccdb30c,BRD-K83837640,JNJ-26481585,opentargets,skipped,0,,项目疾病 ID 为 MONDO:0007254；未自动把它猜测为 Open Targets EFO ID

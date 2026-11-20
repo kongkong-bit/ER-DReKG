@@ -74,6 +74,14 @@ ER-DReKG 将疾病差异表达（S1）、LINCS 药物扰动表达（S2）和知�
 - [数据来源与许可审计](docs/audit/source_license_audit.md)
 - [运行、数据准备与复现说明](docs/REPRODUCIBILITY.md)
 
+## Top 10 机制专项
+
+专项审计与离线证据归档由 `python scripts/run_top10_kg_audit.py` 生成，输出到 `reports/top10_kg/` 和 `data/processed/top10_kg/`。该管线只把仓库已有、带来源的图谱断言纳入正式归档；PubChem、ChEMBL、DGIdb、Reactome、Open Targets、PubMed 适配器提供缓存、限流、重试和原始快照能力，外部抓取需显式运行，查询失败会保留为证据缺口。
+
+后端为 `erpos-gse42568` 提供 `GET /api/v1/projects/{project_id}/top10-kg/audit`，前端最终结果页展示身份、直接靶点、通路和完整机制路径覆盖率。覆盖率是证据完整程度，不是药物疗效概率。
+
+外部快照规范化后，可用 `python scripts/plan_top10_neo4j_import.py` 生成隔离的 Claim/Evidence/机制路径导入计划；`python scripts/apply_top10_neo4j_import.py` 默认只做 dry-run。只有完成备份、设置 `TOP10_KG_ALLOW_NEO4J_WRITE=1` 并显式传入 `--apply --backup-path` 后才允许写入 Neo4j，失败由事务回滚。
+
 ## 数据、许可与安全
 
 公开数据应按各数据源许可和引用要求使用。大型原始数据、LINCS GCTX、数据库、虚拟环境、上传数据及本地密钥不适合直接提交到 GitHub；请按[数据准备说明](docs/REPRODUCIBILITY.md#数据准备)获取或配置。项目结果保留来源、参数与审计报告。禁止提交 `.env`、数据库口令、API Key 或个人数据。
